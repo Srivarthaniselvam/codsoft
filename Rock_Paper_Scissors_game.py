@@ -1,6 +1,9 @@
-# task 4
+# Task 4
 # rock paper scissors game
 import random
+
+
+print("Welcome to Rock-Paper-Scissors!")
 
 def play_game():
     # scores
@@ -52,9 +55,9 @@ def play_game():
         print("The game is a tie!")
 
 # Play again?
-play_again = input("Play again? (yes/no): ")
-while play_again.lower() == "yes":
-    play_game()
-    play_again = input("Play again? (yes/no): ")
-
+while True:
+   play_game()
+   play_again = input("Play again? (yes/no): ")
+   if play_again != "yes":
+        break
 print("Thanks for playing the Rock_Paper_Scissors game!")
